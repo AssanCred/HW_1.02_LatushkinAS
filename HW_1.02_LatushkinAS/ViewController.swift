@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Color {
+enum Color { // Создаем перечисления для использования в переборе case
     case red
     case yellow
     case green
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet var greenView: UIView!
     
     private let alphaOff: CGFloat = 0.3
-    private let alphaOn: CGFloat = 1
+    private let alphaOn: CGFloat = 2
     
     private var color = Color.red
     
@@ -49,8 +49,8 @@ class ViewController: UIViewController {
         
         switch color {
         case .red:
-            redView.alpha = alphaOn
             greenView.alpha = alphaOff
+            redView.alpha = alphaOn
             color = .yellow
         case .yellow:
             redView.alpha = alphaOff
