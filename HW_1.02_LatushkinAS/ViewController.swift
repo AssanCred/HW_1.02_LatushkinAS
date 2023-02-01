@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet var greenView: UIView!
     
     private let alphaOff: CGFloat = 0.3
-    private let alphaOn: CGFloat = 2
+    private let alphaOn: CGFloat = 1
     
     private var color = Color.red
     
