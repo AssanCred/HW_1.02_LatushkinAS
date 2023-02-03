@@ -16,25 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-7e-naS">
-                                <rect key="frame" x="110" y="234" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-7e-naS">
+                                <rect key="frame" x="110" y="54" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="32K-xF-3ue"/>
+                                    <constraint firstAttribute="width" constant="100" id="ddf-uB-Frz"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kHw-5G-iGW">
-                                <rect key="frame" x="110" y="234" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHw-5G-iGW">
+                                <rect key="frame" x="110" y="195" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pX1-F2-TWh"/>
+                                    <constraint firstAttribute="width" constant="100" id="q9e-jS-UgB"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIP-LG-eAQ">
-                                <rect key="frame" x="110" y="234" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZIP-LG-eAQ">
+                                <rect key="frame" x="110" y="333" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="D8x-An-iU8"/>
+                                    <constraint firstAttribute="height" constant="100" id="MNj-6c-zS1"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-KO-J5K">
-                                <rect key="frame" x="115.5" y="468" width="89" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-KO-J5K">
+                                <rect key="frame" x="86" y="468" width="148" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.33965960350000002" blue="0.62377763610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="148" id="X7j-gs-ziP"/>
+                                    <constraint firstAttribute="height" constant="48" id="x3y-vP-94Z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -46,6 +58,16 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SwR-KO-J5K" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Kl-fh-Fw6"/>
+                            <constraint firstItem="ZIP-LG-eAQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QY1-Es-Zhe"/>
+                            <constraint firstItem="Scx-7e-naS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Rgt-Zp-Rz2"/>
+                            <constraint firstItem="Scx-7e-naS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="VDr-a9-5Ev"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SwR-KO-J5K" secondAttribute="bottom" constant="52" id="dbl-sB-vgP"/>
+                            <constraint firstItem="ZIP-LG-eAQ" firstAttribute="top" secondItem="kHw-5G-iGW" secondAttribute="bottom" constant="38" id="jhW-zL-1SU"/>
+                            <constraint firstItem="kHw-5G-iGW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l0c-co-LN1"/>
+                            <constraint firstItem="kHw-5G-iGW" firstAttribute="top" secondItem="Scx-7e-naS" secondAttribute="bottom" constant="41" id="s75-VV-kqM"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenView" destination="ZIP-LG-eAQ" id="RDe-Uw-l3O"/>
