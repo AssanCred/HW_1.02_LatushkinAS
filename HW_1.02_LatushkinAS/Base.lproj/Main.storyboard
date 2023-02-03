@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Pfn-im-BNf">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Pfn-im-BNf">
                                 <rect key="frame" x="110" y="50" width="100" height="370"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scx-7e-naS">
@@ -44,12 +44,17 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0lc-BP-ugX"/>
+                                    <constraint firstAttribute="height" constant="370" id="qYt-ML-OPH"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-KO-J5K">
-                                <rect key="frame" x="100" y="468" width="120" height="48"/>
+                                <rect key="frame" x="83.5" y="465" width="153" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="0.33965960350000002" blue="0.62377763610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="9Bc-5X-Jeq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="9cX-ON-0On"/>
+                                    <constraint firstAttribute="height" constant="48" id="m1j-zV-6So"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -65,9 +70,8 @@
                         <constraints>
                             <constraint firstItem="Pfn-im-BNf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="AHM-3Y-SIg"/>
                             <constraint firstItem="SwR-KO-J5K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F09-lB-c2x"/>
-                            <constraint firstItem="SwR-KO-J5K" firstAttribute="top" secondItem="Pfn-im-BNf" secondAttribute="bottom" constant="48" id="QYk-fe-6Fb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SwR-KO-J5K" secondAttribute="bottom" constant="55" id="e60-bJ-zOD"/>
                             <constraint firstItem="Pfn-im-BNf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zYw-L9-EwD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pfn-im-BNf" secondAttribute="bottom" constant="148" id="zut-dO-KCw"/>
                         </constraints>
                     </view>
                     <connections>
